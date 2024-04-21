@@ -335,6 +335,7 @@ header {
     padding: 25px 120px;
     border: 1px solid rgba(196, 196, 196, 1);
     margin: 25px;
+    background: none;
 }
 .header__container-item:last-child button:last-child {
     padding: 25px 55px;
