@@ -7,12 +7,16 @@
     <link rel="stylesheet" href="./gid.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="header__container">
             <div class="header__container-item">
-                <img src="./main-images/burger.svg" alt="burger">
+                <div class="header__burger">
+                    <span class="header__burger-item"></span>
+                    <span class="header__burger-item"></span>
+                    <span class="header__burger-item"></span>
+                </div>
                 <a href="./gid.html"><img src="./main-images/Logo.svg" alt="logo"></a>
-                <img src="./main-images/phone.svg" alt="phone">
+                <img  class="header__phone" src="./main-images/phone.svg" alt="phone">
             </div>
             <div class="header__container-item">
                 <h1>Лучшее для лучших</h1>
@@ -21,7 +25,44 @@
                     <button class="header__button">Расчитать стоимость</button>
                 </div>
             </div>
-
+        </div>
+        <div class="popup">
+            <div class="header__container-item">
+                <div class="header__burger-close">
+                    <span class="close"></span>
+                    <span class="close"></span>
+                </div>
+                <a href="./gid.html"><img src="./main-images/Logo.svg" alt="logo"></a>
+                <img src="./main-images/phone.svg" alt="phone">
+            </div>
+            <ul class="popup__list">
+                <li class="popup__item">Главная</li>
+                <li class="popup__item">3D-Дизайн</li>
+                <li class="popup__item">Ремонт</li>
+                <li class="popup__item">Строительство</li>
+                <li class="popup__item">Проекты</li>
+                <li class="popup__item">Ландшафтный дизайн</li>
+                <li class="popup__item">
+                    <img src="./main-images/modal_telegram.svg" alt="arrow">
+                    <img src="./main-images/modal_inst.svg" alt="arrow">
+                    <img src="./main-images/modal_face.svg" alt="arrow">
+                    <img src="./main-images/modal_youtube.svg" alt="arrow">
+                    <img src="./main-images/modal_tictok.svg" alt="arrow">
+                    <img src="./main-images/modal_watsup.svg" alt="arrow">
+                </li>
+            </ul>
+        </div>
+        <div class="popup__phone">
+            <div class="popup__phone-block">
+                <div class="popup__phone-item">
+                    <span class="close_line"></span>
+                    <span class="close_line"></span>
+                </div>
+                <h3>Обратный звонок</h3>
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="number" placeholder="Номер телефона" required>
+                <button>Позвонить мне</button>
+            </div>
         </div>
     </header>
     <main>
@@ -126,7 +167,6 @@
             </div>
         </div>
         <span class="grey_line"></span>
-        </div>
         <div class="main__block">
             <div class="projects">
                 <div class="projects__block">
@@ -204,8 +244,238 @@
                 </div>
             </div>
         </div>
+        <div class="main__block">
+            <div class="stages">
+                <div class="stages__block">
+                    <h2>6 ЭТАПОВ ОТ ЗАЯВКИ ДО </br>СДАЧИ ГОТОВОГО ОБЪЕКТА</h2>
+                    <span class="line"></span>
+                </div>
+                <div class="stages__block">
+                    <div class="stages__block-item">
+                        <div class="stages__block-item__block">
+                            <p class="number">01</p>
+                            <div class="stages__block-item__block-item">
+                                <img src="./main-images/email.svg" alt="email">
+                                <h5>Заявка</h5>
+                                <p>Оставляйте заявку на сайте и получите 2 варианта планировки квартиры БЕСПЛАТНО</p>
+                                <div class="stages__block-item__block-item-img">
+                                    <div class="qwerty"><img class="qwe" src="./main-images/123.svg" alt=""></div>
+                                    <a href="">Оставить отзыв</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stages__block-item__block">
+                            <p class="number">02</p>
+                            <div class="stages__block-item__block-item">
+                                <img src="./main-images/design.svg" alt="design">
+                                <h5>Дизайн</h5>
+                                <p>Собираете на сайте стиль
+                                    из четырех готовых решений
+                                    с возможностью редактирования</p>
+                                <div class="stages__block-item__block-item-img">
+                                    <div class="qwerty"><img class="qwe" src="./main-images/123.svg" alt=""></div>
+                                    <a href="">Выбрать дизайн</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stages__block-item__block">
+                            <p class="number">03</p>
+                            <div class="stages__block-item__block-item">
+                                <img src="./main-images/calc.svg" alt="calc">
+                                <h5>Расчет</h5>
+                                <p>Расчитываете финальную стоимость ремонта с помощью 
+                                    онлайн-калькулятора</p>
+                                <div class="stages__block-item__block-item-img">
+                                    <div class="qwerty"><img class="qwe" src="./main-images/123.svg" alt=""></div>
+                                    <a href="">Посчитать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stages__block-item">
+                        <div class="lines">
+                            <div class="big-line">
+                                <img src="./main-images/Line 15.svg" alt="big-line">
+                            </div>
+                            <div class="small-line">
+                                <img src="./main-images/Line 18.svg" alt="small-line">
+                                <img src="./main-images/Line 18.svg" alt="small-line">
+                                <img src="./main-images/Line 18.svg" alt="small-line">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stages__block-item">
+                        <div class="stages__block-item__block">
+                            <p class="number">04</p>
+                            <div class="stages__block-item__block-item">
+                                <img src="./main-images/doc.svg" alt="doc">
+                                <h5>Договор</h5>
+                                <p>Собираете на сайте стиль
+                                    из четырех готовых решений
+                                    с возможностью редактирования</p>
+                                <div class="stages__block-item__block-item-img">
+                                    <div class="qwerty"><img class="qwe" src="./main-images/123.svg" alt=""></div>
+                                    <a href="">Оставить отзыв</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stages__block-item__block">
+                            <p class="number">05</p>
+                            <div class="stages__block-item__block-item">
+                                <img src="./main-images/malyar.svg" alt="">
+                                <h5>Ремонт</h5>
+                                <p>Собираете на сайте стиль
+                                    из четырех готовых решений
+                                    с возможностью редактирования</p>
+                                <div class="stages__block-item__block-item-img">
+                                    <div class="qwerty"><img class="qwe" src="./main-images/123.svg" alt=""></div>
+                                    <a href="./">Оставить отзыв</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stages__block-item__block">
+                            <p class="number">06</p>
+                            <div class="stages__block-item__block-item">
+                                <img src="./main-images/house.svg" alt="">
+                                <h5>Сдача объекта</h5>
+                                <p>Расчитываете финальную стоимость ремонта с помощью 
+                                    онлайн-калькулятора</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stages__block-item">
+                        <button>Начать<img src="./main-images/Arrow 4.svg" alt="arrow"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main__block">
+            <div class="info">
+                <h1>МЫ ТАМ, ГДЕ:</h1>
+                <ul>
+                    <li>Требуется высокое качество ремонтных работ</li>
+                    <li>Нужно четко соблюсти Бюджет</li>
+                    <li>Необходимо ответственно подойти к процессу</li>
+                </ul>
+            </div>
+        </div>
+        <div class="main__block">
+            <div class="instagram">
+                <div class="instagram__block">
+                    <a href=""><img src="./main-images/instagramLOGO.svg" alt="instagram"></a>
+                </div>
+                <div class="instagram__block">
+                    <div class="instagram__block-item">
+                        <img src="./main-images/inst1.jpg" alt="">
+                    </div>
+                    <div class="instagram__block-item">
+                        <img src="./main-images/inst2.jpg" alt="">
+                    </div>
+                    <div class="instagram__block-item">
+                        <img src="./main-images/inst3.jpg" alt="">
+                    </div>
+                    <div class="instagram__block-item">
+                        <img src="./main-images/inst4.jpg" alt="">
+                    </div>
+                    <div class="instagram__block-item">
+                        <img src="./main-images/inst5.jpg" alt="">
+                    </div>
+                    <div class="instagram__block-item">
+                        <img src="./main-images/inst6.jpg" alt="">
+                    </div>
+                    <div class="instagram__block-item">
+                        <img src="./main-images/inst7.jpg" alt="">
+                    </div>
+                    <div class="instagram__block-item">
+                        <img src="./main-images/inst8.jpg" alt="">
+                    </div>
+
+
+
+
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <span class="grey_line"></span>
+        <div class="main__block">
+            <div class="catalog">
+                <div class="catalog__block">
+                    <h2>ПОЛУЧИТЕ КАТАЛОГ </br>НАШИХ ПРОЕКТОВ</h2>
+                    <span class="line"></span>
+                </div>
+                <div class="catalog__block">
+                    <div class="catalog__block-item">
+                        <img src="./main-images/girl.jpg" alt="girl">
+                    </div>
+                    <div class="catalog__block-item">
+                        <h3>Оставьте ваш E-mail, чтобы получить каталог наших проектов</h3>
+                        <p>Каталог поможет вам выбрать стиль и продумать планировку квартиры</p>
+                        <input type="text" placeholder="Введите ваш E-mail" required/>
+                        <div class="checkbox__item">
+                            <input class="custom_checkbox" type="checkbox"  name="checkbox" required/>
+                            <label for="checkbox">Я согласен на <a href="" title="Пользовательское соглашение">обработку персональных данных</a></label>
+                        </div>
+                        <button>Получить каталог</button>
+                    </div>
+            </div>
+        </div>
     </main>
-    <footer>
+    <footer class="footer">
+        <div class="footer__block">
+            <div class="footer__block-item">
+                <a href="#header"><img class="footer__logo" src="./main-images/logo.svg" alt="logo"></a>
+            </div>
+            <div class="footer__block-item">
+                <ul class="gid">
+                    <li>Компания gid</li>
+                    <li>О нас</li>
+                    <li>Наша команда</li>
+                    <li>История</li>
+                </ul>
+            </div>
+            <div class="footer__block-item">
+                <ul class="footer__projects">
+                    <li>Проекты</li>
+                    <li>Квартиры</li>
+                    <li>Коттеджи</li>
+                    <li>Офисы</li>
+                    <li>Рестораны</li>
+                </ul>
+            </div>
+            <div class="footer__block-item">
+                <ul class="footer__services">
+                    <li>Услуги</li>
+                    <li>Квартиры</li>
+                    <li>Коттеджи</li>
+                    <li>Офисы</li>
+                    <li>Рестораны</li>
+                </ul>
+            </div>
+            <div class="footer__block-item">
+                <ul class="footer__contact">
+                    <li>Контакты</li>
+                    <li>+(7495) 555-15-05</li>
+                    <li>info@gid.pro</li>
+            </div>
+            <div class="footer__block-item">
+                <ul class="footer__links">
+                    <li><a href=""><img src="./main-images/FOOTER_inst.svg" alt="arrow"></a></li>
+                    <li><a href=""><img src="./main-images/footer_vk.svg" alt="arrow"></a></li>
+                    <li><a href=""><img src="./main-images/footer_faceboock.svg" alt="arrow"></a></li>
+                </ul>
+            </div>
+            <div class="footer__block-item">
+                <button class="footer__button">
+                    <a href="#header"><span class="footer__button-text">Наверх</span></a>
+                    <img src="./main-images/footer_Arrow 4.svg" alt="arrow">
+                </button>
+            </div>
+        </div>
+        <p>Gid.group 2021/ All rights reserved</p>
     </footer>
+    <script src="./gid.js"></script>
 </body>
 </html>
